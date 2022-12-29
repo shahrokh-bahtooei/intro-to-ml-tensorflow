@@ -1,0 +1,14 @@
+name: tf
+channels:
+  - conda-forge
+dependencies:
+  - tensorflow-datasets=4.3.0
+  - pandas
+  - numpy
+  - tensorflow=2.9.1
+  - tensorflow-hub=0.12.0
+  - matplotlib
+  - jupyter
+  - pillow
+  - pytest
+  - scikit-learn
