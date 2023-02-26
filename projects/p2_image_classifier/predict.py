@@ -40,8 +40,14 @@ def load_model(model_path: str) -> tf.keras.Model:
 
         return model
 
-    except (IOError, ImportError) as e:
-        print(e.msg)
+    except (IOError, ImportError, OSError, TypeError) as e:
+        try:
+            print(e.msg)
+        except AttributeError:
+            print(e)
+        finally:
+            print('Model could not be loaded!')
+            exit()
 
 
 def load_image(image_path: str) -> np.ndarray:
