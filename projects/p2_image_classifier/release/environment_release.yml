@@ -1,0 +1,10 @@
+name: predict-flower
+channels:
+  - conda-forge
+dependencies:
+  - python==3.10.9
+  - pip
+  - pip:
+      - -r requirements.txt
+
+
