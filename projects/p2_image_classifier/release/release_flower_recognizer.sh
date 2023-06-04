@@ -1,7 +1,8 @@
 #!/bin/sh
 pyinstaller \
- --add-binary 'src/flower_classifier_SavedModel:flower_classifier_SavedModel' \
- --add-data 'src/label_map.json:.' \
+ --add-binary 'resources/flower_classifier_SavedModel:Resources/model' \
+ --add-data 'resources/label_map.json:Resources' \
+ --add-data 'resources/test_images:Resources/test_images' \
  --name flower_recognizer \
  cli.py
 

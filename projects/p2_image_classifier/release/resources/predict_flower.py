@@ -2,6 +2,7 @@ import argparse
 import json
 import logging
 import os
+import warnings
 from pathlib import Path
 from typing import List
 
@@ -9,14 +10,15 @@ from typing import List
 # They must be placed before tensorflow import.
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 logging.getLogger('tensorflow').setLevel(logging.ERROR)
+warnings.filterwarnings("ignore", category=UserWarning)
 
-import PIL
+import PIL.Image
 import numpy as np
 import pandas as pd
 import tensorflow as tf
 
 parent = Path(__file__).resolve().parent
-default_model_path = str(Path.joinpath(parent, 'flower_classifier_SavedModel'))
+default_model_path = str(Path.joinpath(parent, 'model'))
 default_labels_path = str(Path.joinpath(parent, 'label_map.json'))
 
 DEFAULT_TOP_K = 5
