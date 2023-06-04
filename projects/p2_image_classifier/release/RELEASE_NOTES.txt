@@ -1,0 +1,29 @@
+# flower_recognizer
+
+A command-line app to recognize a flower by its photo.
+
+To use it, download the app, navigate to the folder containing the archive, unarchive it, and run it using the following commands. You could test the app with the images in the folder `test_images` or with flower photos found in the Google Images search results.
+
+## macOS Terminal
+```sh
+ditto -x -k flower_recognizer_built_on_macOS_12.zip .
+cd flower_recognizer
+./flower_recognizer test_images/cautleya_spicata.jpg
+```
+**Note:** Because the app is neither developer-signed nor notarized by an identified Developer ID at Apple, GateKeeper on macOS prevents running it—unless the user allows it in the System Preferences:
+
+`System Preferences -> Security & Privacy -> Allow flower_recognizer`
+
+## Windows PowerShell
+```sh
+tar -xf flower_recognizer_built_on_Windows_Server_2022.tar.gz
+cd flower_recognizer
+.\flower_recognizer.exe Resources\test_images\cautleya_spicata.jpg
+```
+
+## Linux Terminal
+```sh
+tar -xf flower_recognizer_built_on_Ubuntu_22_04.tar.gz
+cd flower_recognizer
+./flower_recognizer Resources/test_images/cautleya_spicata.jpg
+```
