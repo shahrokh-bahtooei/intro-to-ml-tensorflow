@@ -38,6 +38,8 @@ been supposed not to include the licensed datasets.
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/shahrokh-bahtooei/intro-to-ml-tensorflow)](https://github.com/shahrokh-bahtooei/intro-to-ml-tensorflow/releases)
 
+![](projects/p2_image_classifier/Model_Sanity_Check.png "flower_recognizer")
+
 ### Unsupervised Learning
 
 👉 Project: **Creating Customer Segments with Arvato**
