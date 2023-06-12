@@ -47,6 +47,8 @@ been supposed not to include the licensed datasets.
 [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/shahrokh-bahtooei/intro-to-ml-tensorflow/blob/master/projects/p3_identify_customer_segments/identify_customer_segments.ipynb)
 [![Udacity Review](https://badgen.net/badge/view%20review/pdf/red?icon=pdf)](https://github.com/shahrokh-bahtooei/intro-to-ml-tensorflow/blob/master/projects/p3_identify_customer_segments/Udacity_review.pdf)
 
+![Matching clusters in population and the company's clients](projects/p3_identify_customer_segments/Clusters.png)
+
 ## Installation
 
 To run the notebooks and scripts in this repo locally on a computer with the _exact_ dependencies, just run the
